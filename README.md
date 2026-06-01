@@ -1,5 +1,7 @@
 # MarkItDown Web App
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 Convert **any file** to clean Markdown in your browser.  
 Powered by [microsoft/markitdown](https://github.com/microsoft/markitdown).
 
@@ -245,4 +247,6 @@ Large PDFs or OCR/audio may hit the timeout.
 
 ## License
 
-Private project (`"private": true` in `package.json`).
+This project is open source under the [MIT License](./LICENSE).
+
+Third-party conversion is powered by [microsoft/markitdown](https://github.com/microsoft/markitdown) (see their repository for license terms).
