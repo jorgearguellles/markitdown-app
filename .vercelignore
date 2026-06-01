@@ -1,2 +1,0 @@
-# Local-only Next.js API route; production uses api/convert.py (Python)
-app/api/convert/route.ts
