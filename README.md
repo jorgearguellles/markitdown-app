@@ -5,6 +5,8 @@
 Convert **any file** to clean Markdown in your browser.  
 Powered by [microsoft/markitdown](https://github.com/microsoft/markitdown).
 
+![MarkItDown app — drop zone and supported formats](./docs/screenshots/app-home.png)
+
 ## Supported formats
 
 | Category | Formats |
@@ -46,6 +48,7 @@ markitdown-app/
 │   └── convert.py              # Vercel Python serverless (production)
 ├── scripts/
 │   └── convert_cli.py          # CLI used by route.ts in local dev
+├── docs/screenshots/             # README images (e.g. app-home.png)
 ├── requirements.txt
 ├── vercel.json                   # Python function limits (timeout, memory)
 └── package.json
