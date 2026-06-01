@@ -16,6 +16,7 @@ import {
 import { FileIcon } from "./FileIcon";
 import { MarkdownPreview } from "./MarkdownPreview";
 import { StatsBar } from "./StatsBar";
+import { LiveStats } from "./LiveStats";
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -468,6 +469,7 @@ export function ConverterApp() {
             </motion.div>
           )}
         </AnimatePresence>
+        <LiveStats />
       </main>
 
       {/* Footer */}

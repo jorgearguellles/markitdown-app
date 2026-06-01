@@ -26,7 +26,8 @@ Powered by [microsoft/markitdown](https://github.com/microsoft/markitdown).
 | **Styling** | Tailwind CSS 3 (custom theme: `ink`, `paper`, `acid`, `rust`) |
 | **UI** | Framer Motion, react-dropzone, lucide-react |
 | **Markdown preview** | react-markdown, remark-gfm |
-| **Observability** | [@vercel/speed-insights](https://vercel.com/docs/speed-insights) (`app/layout.tsx`) |
+| **Observability** | [@vercel/analytics](https://vercel.com/docs/analytics) + [@vercel/speed-insights](https://vercel.com/docs/speed-insights) in `app/layout.tsx` |
+| **Session stats (UI)** | `LiveStats` — localStorage per browser (`components/LiveStats.tsx`) |
 | **Conversion** | Python `markitdown[all]` (see `requirements.txt`) |
 | **Deploy** | Vercel (Next.js + Python serverless) |
 
@@ -220,11 +221,13 @@ None required for basic conversion.
 
 Set in **Project → Settings → Environment Variables** for Production / Preview / Development as needed.
 
-### Speed Insights
+### Web Analytics & Speed Insights
 
-1. Enable **Speed Insights** in the Vercel project dashboard.
-2. The app already includes `<SpeedInsights />` in `app/layout.tsx`.
-3. Deploy; metrics appear after real traffic. See [Speed Insights quickstart](https://vercel.com/docs/speed-insights/quickstart?framework=nextjs).
+1. Enable **Web Analytics** and **Speed Insights** in the Vercel project dashboard.
+2. The app includes `<Analytics />` and `<SpeedInsights />` in `app/layout.tsx` (no visible UI — data goes to Vercel).
+3. Deploy; metrics appear after real traffic on your production/preview URL (not on `localhost`).
+
+**In-app stats:** After at least one conversion, the **“your session”** panel (`LiveStats`) shows converted count, success rate, chars out, and avg time for the current browser only.
 
 ## Limits (Vercel Hobby)
 
