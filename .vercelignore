@@ -1,0 +1,2 @@
+# Local-only API route; production uses api/convert.py (Python serverless)
+app/api/convert/route.ts
