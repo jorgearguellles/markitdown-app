@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-ink text-paper antialiased;
+}
+
+.md-preview {
+  @apply text-[#ccc] leading-relaxed;
+}
+
+.md-preview h1,
+.md-preview h2,
+.md-preview h3 {
+  @apply text-paper font-mono font-medium mt-6 mb-3;
+}
+
+.md-preview h1 {
+  @apply text-xl;
+}
+
+.md-preview h2 {
+  @apply text-lg;
+}
+
+.md-preview p {
+  @apply mb-3;
+}
+
+.md-preview a {
+  @apply text-acid underline underline-offset-2;
+}
+
+.md-preview code {
+  @apply font-mono text-xs bg-[#1a1a1a] text-acid px-1 py-0.5 rounded;
+}
+
+.md-preview pre {
+  @apply font-mono text-xs bg-[#111] border border-[#1a1a1a] p-4 overflow-x-auto mb-4;
+}
+
+.md-preview pre code {
+  @apply bg-transparent p-0 text-[#aaa];
+}
+
+.md-preview ul,
+.md-preview ol {
+  @apply list-disc list-inside mb-3 text-[#aaa];
+}
+
+.md-preview blockquote {
+  @apply border-l-2 border-acid/40 pl-4 text-[#888] italic mb-3;
+}
+
+.md-preview table {
+  @apply w-full border-collapse text-xs mb-4;
+}
+
+.md-preview th,
+.md-preview td {
+  @apply border border-[#2a2a2a] px-3 py-2 text-left;
+}
+
+.md-preview th {
+  @apply bg-[#111] text-paper;
+}
