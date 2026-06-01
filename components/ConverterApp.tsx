@@ -475,14 +475,26 @@ export function ConverterApp() {
         <span className="font-mono text-[10px] text-[#333] tracking-wider">
           FILES NEVER STORED — PROCESSED IN MEMORY
         </span>
+        <span className="text-[#333]">
+
         <a
           href="https://github.com/microsoft/markitdown"
           target="_blank"
           rel="noopener noreferrer"
           className="font-mono text-[10px] text-[#333] hover:text-acid transition-colors tracking-wider"
-        >
-          GITHUB ↗
+          >
+          GITHUB ↗ Microsoft
         </a>
+        <span className="text-[#333]">|</span>
+        <a
+          href="https://github.com/jorgearguellles"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-mono text-[10px] text-[#333] hover:text-acid transition-colors tracking-wider"
+          >
+          GITHUB ↗ Built by Jorge Argüelles 
+        </a>
+          </span>
       </footer>
     </div>
   );
