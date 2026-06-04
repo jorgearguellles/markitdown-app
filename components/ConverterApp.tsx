@@ -272,7 +272,7 @@ export function ConverterApp() {
                 <div className="text-center">
                   {isDragReject ? (
                     <p className="font-mono text-rust text-sm">
-                      Unsupported format or file too large (max 50MB)
+                      Unsupported format or file too large (max 50MB) try file by file.
                     </p>
                   ) : isDragActive ? (
                     <p className="font-mono text-acid text-sm tracking-wider animate-pulse">
@@ -288,7 +288,7 @@ export function ConverterApp() {
                         <span className="text-acid underline underline-offset-2 cursor-pointer">
                           browse
                         </span>{" "}
-                        — max 50MB
+                        — max 50MB per file.
                       </p>
                     </>
                   )}
