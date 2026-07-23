@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="font-mono">
-        <PreviewBanner />
+        {/* <PreviewBanner /> */}
         {children}
         <SpeedInsights />
         <Analytics />
