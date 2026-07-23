@@ -1,1 +1,9 @@
-{}
+{
+  "functions": {
+    "api/convert.py": {
+      "runtime": "python3.12",
+      "maxDuration": 60,
+      "memory": 1024
+    }
+  }
+}
